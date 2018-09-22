@@ -60,7 +60,7 @@ def featurex(filepath):
 
 
 def read_emodb(img_cols=(mfc+sscc+dell+filtt)*numfeatper):
-    rootdir = "C:/Users/ANJALI/Downloads/Audio_Speech_Actors_01-24/"
+    rootdir = "D:/IIITD/Audio_Speech_Actors_01-24/"
     num = 1440
     solns=['1','2','3','4','5','6','7','8']
     data = np.empty(shape=(num, img_cols))
@@ -73,7 +73,7 @@ def read_emodb(img_cols=(mfc+sscc+dell+filtt)*numfeatper):
         data[i] = featurex(full_name)
         label[i] = solns.index(filename[7])
         i = i+1
-    f = open('C:/Users/ANJALI/Anaconda3/envs/anjenv/Lib/site-packages/emodbdata/ravdess.pkl', 'wb')
+    f = open('D:/IIITD/ravdess.pkl', 'wb')
     cPickle.dump((data, label), f)
     f.close()
     print(data.shape)
