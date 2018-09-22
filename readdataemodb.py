@@ -60,7 +60,7 @@ def featurex(filepath):
 
 
 def read_emodb(img_cols=(mfc+sscc+dell+filtt)*numfeatper):
-    rootdir = "C:/Users/ANJALI/Anaconda3/envs/anjenv/Lib/site-packages/emodbdata/wav/"
+    rootdir = "D:/IIITD/emodbdata/wav/"
     num = 535
     solns=['W','L','E','A','F','T','N']
     data=np.empty(shape=(num, img_cols))
@@ -74,7 +74,7 @@ def read_emodb(img_cols=(mfc+sscc+dell+filtt)*numfeatper):
         label.append(solns.index(filename[5]))
         i=i+1
     label=np.array(label)
-    f = open('C:/Users/ANJALI/Anaconda3/envs/anjenv/Lib/site-packages/emodbdata/emodb.pkl', 'wb')
+    f = open('D:/IIITD/emodb.pkl', 'wb')
     cPickle.dump((data, label), f)
     print(data.shape)
     print(label.shape)
