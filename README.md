@@ -9,7 +9,16 @@ Speech emotion recognition, a highly promising and exciting problem in the field
 #
 **Note: All above codes designed for IITKGP database , same codes can be used for other databses with slight modification _speech_emotion_model.py_ in code. I cannot share IITKGP-SEHSC database because it is a property of IITKGP. to get the database please contact [Prof. K. S. Rao](http://cse.iitkgp.ac.in/~ksrao/).**
 
-**Download EmoDB database, Ravdess database**
+**Download [_EmoDB_](https://drive.google.com/open?id=16LtD3SQuMral216YyB6pyRd6DXHWhWTX) database, [_Ravdess_](https://drive.google.com/drive/folders/118PZOuTN_2a-PwyQS1ZDZ7ZjnNoSoOS9?usp=sharing) database**
+
+# Libraries required 
+ - Item 1
+ - Item 2
+  - Sub Item 1
+  - Sub Item 2
+
+
+
 
 #
 MFCCs nd their delta nd double delta features are calculated for each frame. (13+13+13=39)
@@ -18,9 +27,9 @@ The spectral sub-band centroids are calculated next, 26 for each frame.
 
 the mean, variance, maximum value, minimum value, skewness, kurtosis and inter-quartile range. These values were calculated for each audio file over all the frames and for each coefficient, which gave us a feature vector of dimension \((13+13+13+26) * 7 = 455 features for each sample
 
-**read_iitkgp.py** -> for extracting features for IITKGP dataset. You can download output pkl file (link)
+**read_iitkgp.py** -> for extracting features for IITKGP dataset. You can download output pkl file [**_iitkgp.pkl_**](https://drive.google.com/file/d/13zgi98yDhnyfItsExnnRy3m8xRWzncQ8/view?usp=sharing)
 
-**readdataemodb.py** ->	for extracting features for EmoDB dataset. You can download output pkl file ()
+**readdataemodb.py** ->	for extracting features for EmoDB dataset. You can download output pkl file [**_emodb.pkl_**](https://drive.google.com/file/d/11lHqfcD4r99RfR275r2RZiJnDfL1fngt/view?usp=sharing)
 
 **readdataravdess.py** -> for extracting features for Ravdess dataset.
 
