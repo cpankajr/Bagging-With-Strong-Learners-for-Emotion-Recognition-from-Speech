@@ -36,3 +36,11 @@ the mean, variance, maximum value, minimum value, skewness, kurtosis and inter-q
 Our base estimator was a Support Vector Machine with a Gaussian kernel, penalty term 100 and kernel coefficient 0.1. We combined 20 of these in a bagging ensemble, and set bootstrap features as True - so samples are drawn from the training set with replacement. This entire procedure was carried out using the scikit-learn Python package.
 
 **speech_emotion_model.py** -> for training and testing a model
+
+#
+
+To know more about feature selection using Boruta package
+
+[How to perform feature selection (i.e. pick important variables) using Boruta Package in R by AnalyticsVidhya](https://www.analyticsvidhya.com/blog/2016/03/select-important-variables-boruta-package/)
+
+
