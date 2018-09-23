@@ -12,13 +12,13 @@ Speech emotion recognition, a highly promising and exciting problem in the field
 **Download [_EmoDB_](https://drive.google.com/open?id=16LtD3SQuMral216YyB6pyRd6DXHWhWTX) database, [_Ravdess_](https://drive.google.com/drive/folders/118PZOuTN_2a-PwyQS1ZDZ7ZjnNoSoOS9?usp=sharing) database**
 
 # Libraries required 
- - Item 1
- - Item 2
-  - Sub Item 1
-  - Sub Item 2
 
-
-
+ - Scipy
+ - Numpy
+ - python_speech_features 
+ - boruta
+ - imblearn
+ - sklearn
 
 #
 MFCCs nd their delta nd double delta features are calculated for each frame. (13+13+13=39)
