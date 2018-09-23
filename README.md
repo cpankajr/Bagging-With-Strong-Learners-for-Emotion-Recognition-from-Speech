@@ -5,3 +5,25 @@ Speech emotion recognition, a highly promising and exciting problem in the field
 # Results
 
 ![alt text](https://github.com/cpankajr/Bagging-With-Strong-Learners-for-Emotion-Recognition-from-Speech/blob/master/results.png)
+
+#
+**Note: All above codes designed for IITKGP database , same codes can be used for other databses with slight modification _speech_emotion_model.py_ in code. I cannot share IITKGP-SEHSC database because it is a property of IITKGP. to get the database please contact [Prof. K. S. Rao](http://cse.iitkgp.ac.in/~ksrao/).**
+
+**Download EmoDB database, Ravdess database**
+
+#
+MFCCs nd their delta nd double delta features are calculated for each frame. (13+13+13=39)
+
+The spectral sub-band centroids are calculated next, 26 for each frame.
+
+the mean, variance, maximum value, minimum value, skewness, kurtosis and inter-quartile range. These values were calculated for each audio file over all the frames and for each coefficient, which gave us a feature vector of dimension \((13+13+13+26) * 7 = 455 features for each sample
+
+**read_iitkgp.py** -> for extracting features for IITKGP dataset. You can download output pkl file (link)
+
+**readdataemodb.py** ->	for extracting features for EmoDB dataset. You can download output pkl file ()
+
+**readdataravdess.py** -> for extracting features for Ravdess dataset.
+
+Our base estimator was a Support Vector Machine with a Gaussian kernel, penalty term 100 and kernel coefficient 0.1. We combined 20 of these in a bagging ensemble, and set bootstrap features as True - so samples are drawn from the training set with replacement. This entire procedure was carried out using the scikit-learn Python package.
+
+**speech_emotion_model.py** -> for training and testing a model
