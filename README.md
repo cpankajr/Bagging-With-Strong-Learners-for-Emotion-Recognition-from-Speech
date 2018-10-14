@@ -4,6 +4,8 @@ Speech emotion recognition, a highly promising and exciting problem in the field
 
 Currently writing paper for the same.
 
+Early copy of the [paper](https://github.com/cpankajr/Bagging-With-Strong-Learners-for-Emotion-Recognition-from-Speech/blob/master/bagging-strong-learners.pdf).
+
 # Results
 
 ![alt text](https://github.com/cpankajr/Bagging-With-Strong-Learners-for-Emotion-Recognition-from-Speech/blob/master/results.png)
